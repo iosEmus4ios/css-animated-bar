@@ -1,0 +1,155 @@
+
+<div onclick="change(this);">
+<div class="bar1"> </div>
+<div class="bar2"> </div>
+<div class="bar3"> </div>
+
+
+    
+    
+    
+    <h1 class="custom"> code written by mohamed Ayman </h1>
+                
+<ul class="nav">
+            <li class="nav-item">
+               <div class="move">
+                <a href="side.html">
+                
+                <br>
+                 side-ways nav</a>
+            </li>
+            <br>
+            <li class="nav-item">
+                <a class="nav-link">css</a>
+            </li>
+            <br>
+            <li class="nav-item">
+                <a class="nav-link">
+                nav</a>
+            </li>
+            <br>
+            <li class="nav-item">
+                <a class="nav-link">
+                animtions</a>
+                <br>
+                <br>
+            </li>
+        </ul>
+        </div>
+</div>
+
+
+
+        
+        
+<style>
+.bar1, .bar2, .bar3{
+
+background-color: white;
+width: 4%;
+height: 6px;
+color: black;
+margin: 6px;
+transition:0.4s
+}
+
+.change .bar1{
+    transform: translate(0px, 11px) rotate(45deg);}
+    
+    .change .bar2{ opacity: 0; }
+    
+    
+    .change .bar3{
+    transform: translate(0px, -11px) rotate(-50deg);
+    }
+    
+    .menu{
+    color: white;
+    float: right;
+    font-family: sans-serif;
+    }
+    
+    .display .menu{
+    color: black;
+    background-color: black;
+    }
+    
+    
+
+
+.nav {
+ text-decoration: none;
+ list-style-type: none;
+ margin-top: 19px;
+ margin-left:-10px;
+ color: black;
+ font-family: sans-serif;
+ background-color: black;
+ width:1000px;
+ height: 450px;
+ font-size: 45px;
+ margin-top: -1000px;
+ transition:0.4s;
+ text-align: center;
+ color: black;
+ height: 450px;
+ }
+ 
+ 
+.change .nav
+{
+margin-top: 15px;
+margin-left: -50px;
+}
+
+
+body{background-color:black;
+}
+
+li:hover{text-decoration:none;
+color: white;
+list-style-type: none;
+
+}
+
+a{text-decoration:none;
+color: white;
+list-style-type: none;
+}
+
+
+a:hover{text-decoration:none;
+color: white;
+list-style-type: none;
+
+}
+
+.custom{color:white;
+text-align: center;
+font-family: sans-serif;
+}
+
+.change .custom
+{color:black;}
+</style>
+
+<script>
+function change(x) {
+	x.classList.toggle("change")
+}
+</script>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+

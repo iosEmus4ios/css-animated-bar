@@ -1,0 +1,103 @@
+
+
+<div onclick="change(this);">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<h1 class="custom" style="color:black;">Code written by Mohamed</h1>
+
+<ul class="nav" id="navbar">
+  <li class="nav-item">
+    <a href="side.html">Side-ways nav</a>
+  </li>
+  <br>
+  
+  <li class="nav-item">
+    <a class="nav-link">CSS</a>
+  </li>
+  <br>
+  <li class="nav-item">
+    <a class="nav-link">Nav</a>
+  </li>
+  <br>
+  <li class="nav-item">
+    <a class="nav-link">Animations</a>
+  </li>
+</ul>
+
+<style>
+.bar1, .bar2, .bar3 {
+  background-color: white;
+  width: 4%;
+  height: 6px;
+  color: black;
+  margin: 6px;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0px, 11px) rotate(45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3{
+  transform: translate(0px, -11px) rotate(-50deg);
+}
+
+.nav {
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 19px;
+  margin-left: -10px;
+  color: black;
+  font-family: sans-serif;
+  background-color: black;
+  width: 1000px;
+  height: 450px;
+  font-size: 45px;
+  transform: translate(-50px, -1000px);
+  transition: 0.4s;
+  text-align: center;
+  color: black;
+}
+
+.change .nav {
+  transform: translate(-50px, -5px);
+}
+
+body {
+  background-color: black;
+}
+
+li:hover, a:hover {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+}
+
+.custom {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.change .custom {
+  color: black;
+} 
+
+.show{transform: translate(-50px, -5px);}
+
+a{color:white;}
+</style>
+
+<script>
+function change(x) {
+  x.classList.toggle("change");
+  document.getElementById("navbar").classList.toggle("show");
+}
+</script>
